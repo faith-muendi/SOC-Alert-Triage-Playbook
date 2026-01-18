@@ -1,8 +1,6 @@
 # SOC-Alert-Triage-Playbook
 
-# SOC Alert Triage Playbook
-
-## Overview
+# Overview
 This repository contains a practical **SOC Alert Triage Playbook** designed to simulate real-world Security Operations Center (SOC) workflows.  
 It documents how security alerts are **identified, analyzed, validated, and escalated** by SOC analysts.
 
