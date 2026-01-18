@@ -17,3 +17,15 @@ SOC-Alert-Triage-Playbook/
 │   └── edr-investigation.md
 └── mitre-mapping/
     └── attack-mapping.md
+
+
+
+🔍 Why this structure makes sense
+
+alert-types/ → what kind of alerts SOCs see daily
+
+triage-workflows/ → how analysts investigate
+
+tools/ → what analysts use
+
+mitre-mapping/ → how detections align to adversary behavior
