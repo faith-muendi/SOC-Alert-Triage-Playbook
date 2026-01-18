@@ -1,18 +1,23 @@
 # SOC-Alert-Triage-Playbook
 
-This repository contains documented SOC alert investigations simulating real-world
-security operations center (SOC) workflows. Each case demonstrates alert triage,
-log analysis, IOC identification, MITRE ATT&CK mapping, and incident reporting.
+# SOC Alert Triage Playbook
 
-## Skills Demonstrated
-- SIEM alert triage
-- Log correlation
-- Threat identification
-- MITRE ATT&CK mapping
-- Incident documentation
+## Overview
+This repository contains a practical **SOC Alert Triage Playbook** designed to simulate real-world Security Operations Center (SOC) workflows.  
+It documents how security alerts are **identified, analyzed, validated, and escalated** by SOC analysts.
 
-## Tools & Concepts
-Elastic SIEM, Sysmon, Windows Event Logs, MITRE ATT&CK
+The playbook is structured to reflect **Tier 1 and Tier 2 SOC responsibilities**, focusing on consistency, accuracy, and reduced false positives.
 
-## Author
-Faith Muendi – SOC Analyst
+---
+
+## Objectives
+- Provide a structured approach to alert triage
+- Demonstrate real SOC investigation workflows
+- Reduce false positives through systematic analysis
+- Map alerts to MITRE ATT&CK techniques
+- Serve as a reference for SOC analysts and blue team practitioners
+
+---
+
+## Repository Structure
+
