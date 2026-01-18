@@ -1,0 +1,4 @@
+SOC-Alert-Triage-Playbook/
+└── detections/
+    └── sigma/
+        └── phishing_suspicious_link.yml
