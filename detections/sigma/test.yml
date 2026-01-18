@@ -1,4 +1,21 @@
-SOC-Alert-Triage-Playbook/
-└── detections/
-    └── sigma/
-        └── phishing_suspicious_link.yml
+title: Windows Brute Force Logon Attempt
+id: 7b4a9f42-1c7a-4b91-9f77-1b8c5a1f0001
+status: experimental
+description: Detects multiple failed Windows logon attempts which may indicate brute force activity.
+author: Faith Muendi
+date: 2026/01/18
+
+logsource:
+  product: windows
+  service: security
+
+detection:
+  selection:
+    EventID: 4625
+  condition: selection
+
+falsepositives:
+  - User typing wrong password
+  - Service account misconfiguration
+
+level: medium
