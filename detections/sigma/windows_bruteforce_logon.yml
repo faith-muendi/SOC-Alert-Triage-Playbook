@@ -1,7 +1,7 @@
 title: Windows Brute Force Logon Attempt
 id: 7b4a9f42-1c7a-4b91-9f77-1b8c5a1f0001
 status: experimental
-description: Detects multiple failed Windows logon attempts which may indicate brute force activity.
+description: Detects multiple failed Windows logon attempts from the same source within a short time window.
 author: Faith Muendi
 date: 2026/01/18
 
@@ -12,10 +12,12 @@ logsource:
 detection:
   selection:
     EventID: 4625
-  condition: selection
+  timeframe: 5m
+  condition: selection | count() >= 5
 
 falsepositives:
-  - User typing wrong password
-  - Service account misconfiguration
+  - User forgot password
+  - Misconfigured service accounts
+  - Password changes
 
 level: medium
