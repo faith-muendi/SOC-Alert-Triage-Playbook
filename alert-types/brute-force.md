@@ -1,12 +1,15 @@
-# Brute Force Login Alert – SOC Triage Playbook
+## How This Alert Is Generated
 
-## Alert Description
-This alert indicates multiple failed authentication attempts against a Windows system.  
-Such activity may suggest a **brute force password attack** or **credential stuffing** attempt.
+This alert is generated using a **Sigma detection rule** that monitors Windows Security logs for repeated failed authentication attempts.
 
-This alert is commonly generated from Windows Security Event logs (Event ID 4625).
+### Detection Logic Summary
+- Log Source: Windows Security Event Logs
+- Event ID: 4625 (Failed Logon)
+- Threshold: 5 or more failed attempts
+- Time Window: 5 minutes
 
----
+### Detection File
+
 
 ## Common Causes
 - User entering incorrect password multiple times
